@@ -7,3 +7,21 @@ The BM3D algorithm is a state-of-the-art denoising algorithm that is widely used
 The BM3D ORNL code is a Python implementation of the BM3D algorithm that has been optimized for performance using both `Numba` and `CuPy`.
 The BM3D ORNL code is designed to be easy to use and easy to integrate into existing Python workflows.
 The BM3D ORNL code is released under an open-source license, and is freely available for download and use.
+
+## JAX Migration
+
+We are planning a migration to use [JAX](https://github.com/google/jax) as the core computing library to provide:
+- Unified CPU/GPU codebase
+- Automatic memory management
+- Better performance optimization through XLA
+- Future extensibility with automatic differentiation
+
+### Migration Documentation
+
+- **[Migration Plan](JAX_MIGRATION_PLAN.md)** - Comprehensive 14-week migration roadmap
+- **[Technical Guide](docs/JAX_MIGRATION_TECHNICAL_GUIDE.md)** - Detailed code examples and patterns
+- **[Comparison Analysis](docs/JAX_COMPARISON_ANALYSIS.md)** - Current vs JAX implementation comparison
+- **[Quick Reference](docs/JAX_QUICK_REFERENCE.md)** - Cheat sheet for common JAX patterns
+- **[FAQ](docs/JAX_MIGRATION_FAQ.md)** - Frequently asked questions about the migration
+
+For questions or to contribute to the migration effort, please see the migration documentation or open an issue.
